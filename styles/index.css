@@ -2,6 +2,11 @@
 .Description {
   font-family: "Akaya Telivigala";
   font-weight: 100;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  font-size: 24px;
+  text-shadow: 1px 0 0 #000, -1px 0 #000, -1px 0 0 #000;
+  color: lightsalmon;
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   -ms-grid-column-span: 3;
@@ -74,9 +79,10 @@
   color: lightcyan;
   background-color: lightsalmon;
   text-decoration: underline;
-  -webkit-text-decoration-color: #7bd17b;
-          text-decoration-color: #7bd17b;
-  font-family: Akaya;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-color: black;
+          text-decoration-color: black;
   font-weight: 100;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -88,6 +94,7 @@
   -ms-grid-column-span: 3;
   grid-area: ThanksMessage;
   font-family: "Akaya Telivigala";
+  text-shadow: 1px 0 0 #000, -1px 0 #000, -1px 0 0 #000;
 }
 
 .Footer {

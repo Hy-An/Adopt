@@ -11,15 +11,16 @@
 .ThanksMessage {
   color: $PrimaryColor;
   background-color: $SecondaryColor;
-  text-decoration: underline;
-  text-decoration-color: $UnderlineColor;
-  font-family: Akaya;
+  text-decoration:underline;
+  text-decoration-line:underline;
+  text-decoration-color: black; 
   font-weight: 100;
   justify-content: center;
   text-align: center;
   text-justify: center;
   grid-area: ThanksMessage;
   font-family: "Akaya Telivigala";
+  text-shadow: $TextShadow;
 }
 
 .Footer {
