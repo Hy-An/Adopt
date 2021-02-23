@@ -1,0 +1,28 @@
+.grid-container2 {
+  display: grid;
+  grid-template-columns: repeat (3, 1fr);
+  grid-template-rows: repeat (2, 1fr);
+  gap: 30px 0px;
+  grid-template-areas:
+    "ThanksMessage ThanksMessage ThanksMessage"
+    "Footer Footer Footer";
+}
+
+.ThanksMessage {
+  color: $PrimaryColor;
+  background-color: $SecondaryColor;
+  text-decoration: underline;
+  text-decoration-color: $UnderlineColor;
+  font-family: Akaya;
+  font-weight: 100;
+  justify-content: center;
+  text-align: center;
+  text-justify: center;
+  grid-area: ThanksMessage;
+  font-family: "Akaya Telivigala";
+}
+
+.Footer {
+  position: sticky;
+  bottom: end;
+}

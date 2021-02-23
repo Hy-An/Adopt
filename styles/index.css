@@ -1,22 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap");
-body {
-  background-image: url(https://i.pinimg.com/originals/71/32/3c/71323cbd5c15223a9252f2b6d1c9117c.png);
-  background-color: #b3e6f7;
-  font-family: "Akaya Telivigala";
-  max-height: 1600px;
-  height: 1500px;
-}
-
-main {
-  background-image: url(https://i.pinimg.com/originals/71/32/3c/71323cbd5c15223a9252f2b6d1c9117c.png);
-  background-color: #b3e6f7;
-  font-family: "Akaya Telivigala";
-  max-height: 1600px;
-  height: 1500px;
-}
-
 .Description {
-  font-family: Akaya;
+  font-family: "Akaya Telivigala";
   font-weight: 100;
   -ms-grid-row: 2;
   -ms-grid-column: 2;
@@ -28,16 +12,6 @@ main {
   text-align: center;
   text-justify: auto;
   margin: 20px 20px 20px 20px;
-}
-
-.Menu-Nav {
-  position: fixed;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 1;
-  grid-area: Menu-Nav;
-  max-width: 105px;
-  max-height: 250px;
 }
 
 .Columna-Img {
@@ -85,6 +59,96 @@ main {
   border-style: dotted;
 }
 
+.grid-container2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: repeat 3, 1fr;
+      grid-template-columns: repeat 3, 1fr;
+  -ms-grid-rows: repeat 2, 1fr;
+      grid-template-rows: repeat 2, 1fr;
+  gap: 30px 0px;
+      grid-template-areas: "ThanksMessage ThanksMessage ThanksMessage" "Footer Footer Footer";
+}
+
+.ThanksMessage {
+  color: lightcyan;
+  background-color: lightsalmon;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #7bd17b;
+          text-decoration-color: #7bd17b;
+  font-family: Akaya;
+  font-weight: 100;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  text-justify: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: ThanksMessage;
+  font-family: "Akaya Telivigala";
+}
+
+.Footer {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: end;
+}
+
+.Tittle {
+  font-family: "Akaya Telivigala";
+  font-weight: 600;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: Tittle;
+  background-color: lightsalmon;
+  padding: 1fr 1fr 1fr 1fr;
+  font-size: 24;
+  color: lightblue;
+  -webkit-text-decoration-style: double;
+          text-decoration-style: double;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-color: lightgreen;
+          text-decoration-color: lightgreen;
+  text-align: center;
+  -webkit-box-pack: auto;
+      -ms-flex-pack: auto;
+          justify-content: auto;
+  border: gold;
+  border-width: 5px;
+  border-style: double;
+  border-color: gold;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: (1fr)[5];
+      grid-template-rows: repeat(5, 1fr);
+  gap: 10px 10px;
+  max-width: 100%;
+  max-height: 1400px;
+  height: 1200px;
+      grid-template-areas: "Tittle Tittle Tittle Tittle Tittle" ". Description Description Description ." "Menu-Nav . Columna-Img . Columna-Img2" "Menu-Nav . Columna-Img . Columna-Img2" "Menu-Nav . Columna-Img . Columna-Img2";
+}
+
+Header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: Tittle;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  text-justify: center;
+}
+
 .nv {
   margin-top: 200px;
   background-color: lightsalmon;
@@ -125,93 +189,27 @@ main {
   text-align: inherit;
 }
 
-.grid-container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
-  -ms-grid-rows: (1fr)[5];
-      grid-template-rows: repeat(5, 1fr);
-  gap: 10px 10px;
-  max-width: 100%;
-  max-height: 1400px;
-  height: 1200px;
-      grid-template-areas: "Tittle Tittle Tittle Tittle Tittle" ". Description Description Description ." "Menu-Nav . Columna-Img . Columna-Img2" "Menu-Nav . Columna-Img . Columna-Img2" "Menu-Nav . Columna-Img . Columna-Img2";
-}
-
-Header {
-  -ms-grid-row: 1;
+.Menu-Nav {
+  position: fixed;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 5;
-  grid-area: Tittle;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  text-justify: center;
+  grid-area: Menu-Nav;
+  max-width: 105px;
+  max-height: 250px;
 }
 
-.Tittle {
+body {
+  background-image: url(https://i.pinimg.com/originals/71/32/3c/71323cbd5c15223a9252f2b6d1c9117c.png);
+  background-color: #b3e6f7;
   font-family: "Akaya Telivigala";
-  font-weight: 600;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 5;
-  grid-area: Tittle;
-  background-color: lightsalmon;
-  padding: 1fr 1fr 1fr 1fr;
-  font-size: 24;
-  color: lightblue;
-  -webkit-text-decoration-style: double;
-          text-decoration-style: double;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-  -webkit-text-decoration-color: lightgreen;
-          text-decoration-color: lightgreen;
-  text-align: center;
-  -webkit-box-pack: auto;
-      -ms-flex-pack: auto;
-          justify-content: auto;
-  border: gold;
-  border-width: 5px;
-  border-style: double;
-  border-color: gold;
+  max-height: 1600px;
 }
 
-.grid-container2 {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: repeat 3, 1fr;
-      grid-template-columns: repeat 3, 1fr;
-  -ms-grid-rows: repeat 2, 1fr;
-      grid-template-rows: repeat 2, 1fr;
-  gap: 30px 0px;
-      grid-template-areas: "ThanksMessage ThanksMessage ThanksMessage" "Footer Footer Footer";
-}
-
-.ThanksMessage {
-  color: lightcyan;
-  background-color: lightsalmon;
-  text-decoration: underline;
-  -webkit-text-decoration-color: #7bd17b;
-          text-decoration-color: #7bd17b;
-  font-family: Akaya;
-  font-weight: 100;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  text-justify: center;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: ThanksMessage;
+main {
+  background-image: url(https://i.pinimg.com/originals/71/32/3c/71323cbd5c15223a9252f2b6d1c9117c.png);
+  background-color: #b3e6f7;
   font-family: "Akaya Telivigala";
-}
-
-.Footer {
-  position: -webkit-sticky;
-  position: sticky;
-  bottom: end;
+  max-height: 1600px;
 }
 /*# sourceMappingURL=index.css.map */
