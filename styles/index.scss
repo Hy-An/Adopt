@@ -1,0 +1,183 @@
+$PrimaryColor: lightcyan;
+
+$SecondaryColor: lightsalmon;
+
+$UnderlineColor: rgb(123, 209, 123);
+
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap");
+
+@import "variables";
+@import "nav";
+@import "main";
+@import "header";
+@import "footer";
+@import "body";
+
+body {
+  background-image: url(https://i.pinimg.com/originals/71/32/3c/71323cbd5c15223a9252f2b6d1c9117c.png);
+  background-color: rgb(179, 230, 247);
+  font-family: "Akaya Telivigala";
+  max-height: 1600px;
+  height: 1500px;
+}
+
+main {
+  background-image: url(https://i.pinimg.com/originals/71/32/3c/71323cbd5c15223a9252f2b6d1c9117c.png);
+  background-color: rgb(179, 230, 247);
+  font-family: "Akaya Telivigala";
+  max-height: 1600px;
+  height: 1500px;
+}
+
+.Description {
+  font-family: Akaya;
+  font-weight: 100;
+  grid-area: Description;
+  justify-content: center;
+  text-align: center;
+  text-justify: auto;
+  margin: 20px 20px 20px 20px;
+}
+
+.Menu-Nav {
+  position: fixed;
+  grid-area: Menu-Nav;
+  max-width: 105px;
+  max-height: 250px;
+}
+
+.Columna-Img {
+  grid-area: Columna-Img;
+  max-height: 200px;
+  max-width: 200px;
+  min-height: 100px;
+  min-width: 100px;
+  width: 200px;
+  height: 200px;
+  justify-content: flex-start;
+}
+
+.Columna-Img2 {
+  grid-area: Columna-Img2;
+  max-height: 200px;
+  max-width: 200px;
+  min-height: 100px;
+  min-width: 100px;
+  width: 200px;
+  height: 200px;
+  justify-content: space-evenly;
+}
+
+.imag {
+  width: 200px;
+  height: 200px;
+  max-width: 1fr;
+  max-height: 1fr;
+  min-width: 50px;
+  min-height: 50px;
+  justify-content: flex-start;
+  border-style: dotted;
+}
+
+.nv {
+  margin-top: 200px;
+  background-color: $SecondaryColor;
+  text-decoration-line: underline;
+  text-decoration-color: lightgreen;
+  color: $PrimaryColor;
+  border: gold;
+  border-width: 5px;
+  border-style: double;
+  border-color: gold;
+  justify-content: center;
+  align-content: center;
+  text-justify: initial;
+  text-align: center;
+  position: fixed;
+  justify-content: center;
+  align-content: center;
+  text-justify: initial;
+}
+
+.nav {
+  color: rgb(5, 112, 112);
+  text-decoration-style: dotted;
+  font-size: 26px;
+  text-decoration-line: underline;
+  text-decoration-color: lightgreen;
+  padding: 1fr 1fr 1fr 1fr;
+  margin: 10px 10px 10px 0px;
+  text-justify: inherit;
+  text-align: inherit;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 10px 10px;
+  max-width: 100%;
+  max-height: 1400px;
+  height: 1200px;
+  grid-template-areas:
+    "Tittle Tittle Tittle Tittle Tittle"
+    ". Description Description Description ."
+    "Menu-Nav . Columna-Img . Columna-Img2"
+    "Menu-Nav . Columna-Img . Columna-Img2"
+    "Menu-Nav . Columna-Img . Columna-Img2";
+}
+
+Header {
+  grid-area: Tittle;
+  justify-content: center;
+  text-align: center;
+  text-justify: center;
+}
+
+.Tittle {
+  font-family: "Akaya Telivigala";
+  font-weight: 600;
+  grid-area: Tittle;
+  background-color: $SecondaryColor;
+  padding: 1fr 1fr 1fr 1fr;
+  font-size: 24;
+  color: lightblue;
+  text-decoration-style: double;
+  text-decoration-line: underline;
+  text-decoration-color: lightgreen;
+  text-align: center;
+  justify-content: auto;
+  border: gold;
+  border-width: 5px;
+  border-style: double;
+  border-color: gold;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: repeat (3, 1fr);
+  grid-template-rows: repeat (2, 1fr);
+  gap: 30px 0px;
+  grid-template-areas:
+    "ThanksMessage ThanksMessage ThanksMessage"
+    "Footer Footer Footer";
+}
+
+.ThanksMessage {
+  color: $PrimaryColor;
+  background-color: $SecondaryColor;
+  text-decoration: underline;
+  text-decoration-color: $UnderlineColor;
+  font-family: Akaya;
+  font-weight: 100;
+  justify-content: center;
+  text-align: center;
+  text-justify: center;
+  grid-area: ThanksMessage;
+  font-family: "Akaya Telivigala";
+}
+
+.Footer {
+  position: sticky;
+  bottom: end;
+}
