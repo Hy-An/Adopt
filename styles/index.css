@@ -65,8 +65,7 @@
   -ms-grid-rows: repeat 2, 1fr;
       grid-template-rows: repeat 2, 1fr;
   gap: 30px 0px;
-      grid-template-areas: "ThanksMessage ThanksMessage ThanksMessage"
- "Footer Footer Footer";
+      grid-template-areas: "ThanksMessage ThanksMessage ThanksMessage" "Footer Footer Footer";
 }
 
 .ThanksMessage {
@@ -127,11 +126,7 @@
   max-width: 100%;
   max-height: 1400px;
   height: 1200px;
-      grid-template-areas: "Tittle Tittle Tittle Tittle Tittle"
- ". Description Description Description ."
- "Menu-Nav . Columna-Img . Columna-Img2"
- "Menu-Nav . Columna-Img . Columna-Img2"
- "Menu-Nav . Columna-Img . Columna-Img2";
+      grid-template-areas: "Tittle Tittle Tittle Tittle Tittle" ". Description Description Description ." "Menu-Nav . Columna-Img . Columna-Img2" "Menu-Nav . Columna-Img . Columna-Img2" "Menu-Nav . Columna-Img . Columna-Img2";
 }
 
 Header {
@@ -151,9 +146,7 @@ Header {
   -webkit-text-decoration-color: #90EE90;
           text-decoration-color: #90EE90;
   color: #E0FFFF;
-  border: 5px, double, #FFD700;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  border: 10px double #FFD700;
   text-justify: initial;
   text-align: center;
   position: fixed;
