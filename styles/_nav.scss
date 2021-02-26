@@ -1,0 +1,30 @@
+.Nav {
+    margin-top: 200px;
+    background-color: $SecondaryColor;
+    text-decoration-line: underline;
+    text-decoration-color: $NavTextColor;
+    color: $PrimaryColor;
+    border: 10px double $BordersColor;
+    text-justify: initial;
+    text-align: center;
+    position: fixed;
+    text-justify: initial;
+  }
+  
+  .nav {
+    color:$NavColor;
+    text-decoration-style: dotted;
+    font-size: 26px;
+    text-decoration-line: underline;
+    text-decoration-color: $NavTextColor;
+    padding: 10px;
+    margin: 10px 10px 10px 0px;
+    text-justify: inherit;
+    text-align: inherit;
+  }
+  .MenuNav {
+    position: fixed;
+    grid-area: Menu-Nav;
+    max-width: 105px;
+    max-height: 250px;
+  }  

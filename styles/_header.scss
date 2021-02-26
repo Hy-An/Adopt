@@ -1,0 +1,16 @@
+.Tittle {
+    font-family: "Akaya Telivigala";
+    font-weight: 600;
+    grid-area: Tittle;
+    background-color: $SecondaryColor;
+    padding: 5px;
+    font-size: 24;
+    color: $TittleColor;
+    text-decoration-style: double;
+    text-decoration-line: underline;
+    text-decoration-color:$NavTextColor;
+    text-align: center;
+    border:$BordersColor;
+    border: 5px double $BordersColor;
+}
+   

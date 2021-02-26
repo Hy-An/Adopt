@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap");
+
+@import "variables";
+@import "body";
+@import "footer";
+@import "header";
+@import "main";
+@import "nav";
+
+
+body {
+  background-image: url(https://i.pinimg.com/originals/71/32/3c/71323cbd5c15223a9252f2b6d1c9117c.png);
+  background-color: $BackgroundColor;
+  font-family: "Akaya Telivigala";
+  max-height: 1600px;
+}
+
+main {
+  background-image: url(https://i.pinimg.com/originals/71/32/3c/71323cbd5c15223a9252f2b6d1c9117c.png);
+  background-color: $BackgroundColor;
+  font-family: "Akaya Telivigala";
+  max-height: 1600px;
+}
+
+
+
+
+
+
+
+

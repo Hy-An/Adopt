@@ -1,0 +1,42 @@
+.Description {
+    font-family: "Akaya Telivigala";
+    font-weight: 100;
+    text-decoration-line:underline;
+    font-size: 24px;
+    text-shadow: $TextShadow;
+    color: $SecondaryColor;
+    grid-area: Description;
+    text-align: center;
+    text-justify: auto;
+    margin: 20px;
+  }
+
+  .ColumnImg {
+    grid-area: Columna-Img;
+    max-height: 200px;
+    max-width: 200px;
+    min-height: 100px;
+    min-width: 100px;
+    width: 200px;
+    height: 200px;
+    justify-content: flex-start;
+  }
+  
+  .ColumnImg2 {
+    grid-area: Columna-Img2;
+    width: 200px;
+    height: 200px;
+    justify-content: space-evenly;
+  }
+
+  .ImageInColumn {
+    width: 200px;
+    height: 200px;
+    max-width: 300px;
+    max-height: 300px;
+    min-width: 50px;
+    min-height: 50px;
+    justify-content: flex-start;
+    border-style: dotted;
+  }
+  
