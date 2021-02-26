@@ -138,6 +138,10 @@ Header {
   text-justify: center;
 }
 
+.TextoLabel {
+  display: block;
+}
+
 .Nav {
   margin-top: 200px;
   background-color: #FFA098;
