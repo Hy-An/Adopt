@@ -6,20 +6,17 @@
           text-decoration-line: underline;
   font-size: 24px;
   text-shadow: 1px 0 0 #000, -1px 0 #000, -1px 0 0 #000;
-  color: lightsalmon;
+  color: #FFA098;
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   -ms-grid-column-span: 3;
   grid-area: Description;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   text-align: center;
   text-justify: auto;
-  margin: 20px 20px 20px 20px;
+  margin: 20px;
 }
 
-.Columna-Img {
+.ColumnImg {
   -ms-grid-row: 3;
   -ms-grid-row-span: 3;
   -ms-grid-column: 3;
@@ -35,15 +32,11 @@
           justify-content: flex-start;
 }
 
-.Columna-Img2 {
+.ColumnImg2 {
   -ms-grid-row: 3;
   -ms-grid-row-span: 3;
   -ms-grid-column: 5;
   grid-area: Columna-Img2;
-  max-height: 200px;
-  max-width: 200px;
-  min-height: 100px;
-  min-width: 100px;
   width: 200px;
   height: 200px;
   -webkit-box-pack: space-evenly;
@@ -51,11 +44,11 @@
           justify-content: space-evenly;
 }
 
-.imag {
+.ImageInColumn {
   width: 200px;
   height: 200px;
-  max-width: 1fr;
-  max-height: 1fr;
+  max-width: 300px;
+  max-height: 300px;
   min-width: 50px;
   min-height: 50px;
   -webkit-box-pack: start;
@@ -64,7 +57,7 @@
   border-style: dotted;
 }
 
-.grid-container2 {
+.GridContainer2 {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: repeat 3, 1fr;
@@ -72,21 +65,19 @@
   -ms-grid-rows: repeat 2, 1fr;
       grid-template-rows: repeat 2, 1fr;
   gap: 30px 0px;
-      grid-template-areas: "ThanksMessage ThanksMessage ThanksMessage" "Footer Footer Footer";
+      grid-template-areas: "ThanksMessage ThanksMessage ThanksMessage"
+ "Footer Footer Footer";
 }
 
 .ThanksMessage {
-  color: lightcyan;
-  background-color: lightsalmon;
+  color: #E0FFFF;
+  background-color: #FFA098;
   text-decoration: underline;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
-  -webkit-text-decoration-color: black;
-          text-decoration-color: black;
+  -webkit-text-decoration-color: #000;
+          text-decoration-color: #000;
   font-weight: 100;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   text-align: center;
   text-justify: center;
   -ms-grid-row: 1;
@@ -110,27 +101,22 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 5;
   grid-area: Tittle;
-  background-color: lightsalmon;
-  padding: 1fr 1fr 1fr 1fr;
+  background-color: #FFA098;
+  padding: 5px;
   font-size: 24;
-  color: lightblue;
+  color: #ADD8E6;
   -webkit-text-decoration-style: double;
           text-decoration-style: double;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
-  -webkit-text-decoration-color: lightgreen;
-          text-decoration-color: lightgreen;
+  -webkit-text-decoration-color: #90EE90;
+          text-decoration-color: #90EE90;
   text-align: center;
-  -webkit-box-pack: auto;
-      -ms-flex-pack: auto;
-          justify-content: auto;
-  border: gold;
-  border-width: 5px;
-  border-style: double;
-  border-color: gold;
+  border: #FFD700;
+  border: 5px double #FFD700;
 }
 
-.grid-container {
+.GridContainer {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[5];
@@ -141,7 +127,11 @@
   max-width: 100%;
   max-height: 1400px;
   height: 1200px;
-      grid-template-areas: "Tittle Tittle Tittle Tittle Tittle" ". Description Description Description ." "Menu-Nav . Columna-Img . Columna-Img2" "Menu-Nav . Columna-Img . Columna-Img2" "Menu-Nav . Columna-Img . Columna-Img2";
+      grid-template-areas: "Tittle Tittle Tittle Tittle Tittle"
+ ". Description Description Description ."
+ "Menu-Nav . Columna-Img . Columna-Img2"
+ "Menu-Nav . Columna-Img . Columna-Img2"
+ "Menu-Nav . Columna-Img . Columna-Img2";
 }
 
 Header {
@@ -149,35 +139,24 @@ Header {
   -ms-grid-column: 1;
   -ms-grid-column-span: 5;
   grid-area: Tittle;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   text-align: center;
   text-justify: center;
 }
 
-.nv {
+.Nav {
   margin-top: 200px;
-  background-color: lightsalmon;
+  background-color: #FFA098;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
-  -webkit-text-decoration-color: lightgreen;
-          text-decoration-color: lightgreen;
-  color: lightcyan;
-  border: gold;
-  border-width: 5px;
-  border-style: double;
-  border-color: gold;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-text-decoration-color: #90EE90;
+          text-decoration-color: #90EE90;
+  color: #E0FFFF;
+  border: 5px, double, #FFD700;
   -ms-flex-line-pack: center;
       align-content: center;
   text-justify: initial;
   text-align: center;
   position: fixed;
-  justify-content: center;
-  align-content: center;
   text-justify: initial;
 }
 
@@ -188,15 +167,15 @@ Header {
   font-size: 26px;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
-  -webkit-text-decoration-color: lightgreen;
-          text-decoration-color: lightgreen;
-  padding: 1fr 1fr 1fr 1fr;
+  -webkit-text-decoration-color: #90EE90;
+          text-decoration-color: #90EE90;
+  padding: 10px;
   margin: 10px 10px 10px 0px;
   text-justify: inherit;
   text-align: inherit;
 }
 
-.Menu-Nav {
+.MenuNav {
   position: fixed;
   -ms-grid-row: 3;
   -ms-grid-row-span: 3;
@@ -208,14 +187,14 @@ Header {
 
 body {
   background-image: url(https://i.pinimg.com/originals/71/32/3c/71323cbd5c15223a9252f2b6d1c9117c.png);
-  background-color: #b3e6f7;
+  background-color: #B3E6F7;
   font-family: "Akaya Telivigala";
   max-height: 1600px;
 }
 
 main {
   background-image: url(https://i.pinimg.com/originals/71/32/3c/71323cbd5c15223a9252f2b6d1c9117c.png);
-  background-color: #b3e6f7;
+  background-color: #B3E6F7;
   font-family: "Akaya Telivigala";
   max-height: 1600px;
 }

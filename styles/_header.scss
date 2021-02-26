@@ -3,16 +3,14 @@
     font-weight: 600;
     grid-area: Tittle;
     background-color: $SecondaryColor;
-    padding: 1fr 1fr 1fr 1fr;
+    padding: 5px;
     font-size: 24;
-    color: lightblue;
+    color: $TittleColor;
     text-decoration-style: double;
     text-decoration-line: underline;
-    text-decoration-color: lightgreen;
+    text-decoration-color:$NavTextColor;
     text-align: center;
-    justify-content: auto;
-    border: gold;
-    border-width: 5px;
-    border-style: double;
-    border-color: gold;
-  }
+    border:$BordersColor;
+    border: 5px double $BordersColor;
+}
+   

@@ -1,4 +1,4 @@
-.grid-container2 {
+.GridContainer2 {
   display: grid;
   grid-template-columns: repeat (3, 1fr);
   grid-template-rows: repeat (2, 1fr);
@@ -13,9 +13,8 @@
   background-color: $SecondaryColor;
   text-decoration:underline;
   text-decoration-line:underline;
-  text-decoration-color: black; 
+  text-decoration-color: $DecorationColor; 
   font-weight: 100;
-  justify-content: center;
   text-align: center;
   text-justify: center;
   grid-area: ThanksMessage;

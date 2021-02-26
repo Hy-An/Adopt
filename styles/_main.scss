@@ -1,4 +1,4 @@
-.grid-container {
+.GridContainer {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -16,7 +16,6 @@
   
   Header {
     grid-area: Tittle;
-    justify-content: center;
     text-align: center;
     text-justify: center;
   }

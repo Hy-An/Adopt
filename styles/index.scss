@@ -10,14 +10,14 @@
 
 body {
   background-image: url(https://i.pinimg.com/originals/71/32/3c/71323cbd5c15223a9252f2b6d1c9117c.png);
-  background-color: rgb(179, 230, 247);
+  background-color: $BackgroundColor;
   font-family: "Akaya Telivigala";
   max-height: 1600px;
 }
 
 main {
   background-image: url(https://i.pinimg.com/originals/71/32/3c/71323cbd5c15223a9252f2b6d1c9117c.png);
-  background-color: rgb(179, 230, 247);
+  background-color: $BackgroundColor;
   font-family: "Akaya Telivigala";
   max-height: 1600px;
 }

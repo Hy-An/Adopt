@@ -1,35 +1,29 @@
-.nv {
+.Nav {
     margin-top: 200px;
     background-color: $SecondaryColor;
     text-decoration-line: underline;
-    text-decoration-color: lightgreen;
+    text-decoration-color: $NavTextColor;
     color: $PrimaryColor;
-    border: gold;
-    border-width: 5px;
-    border-style: double;
-    border-color: gold;
-    justify-content: center;
+    border: 5px, double, $BordersColor;
     align-content: center;
     text-justify: initial;
     text-align: center;
     position: fixed;
-    justify-content: center;
-    align-content: center;
     text-justify: initial;
   }
   
   .nav {
-    color: rgb(5, 112, 112);
+    color:$navColor;
     text-decoration-style: dotted;
     font-size: 26px;
     text-decoration-line: underline;
-    text-decoration-color: lightgreen;
-    padding: 1fr 1fr 1fr 1fr;
+    text-decoration-color: $NavTextColor;
+    padding: 10px;
     margin: 10px 10px 10px 0px;
     text-justify: inherit;
     text-align: inherit;
   }
-  .Menu-Nav {
+  .MenuNav {
     position: fixed;
     grid-area: Menu-Nav;
     max-width: 105px;
