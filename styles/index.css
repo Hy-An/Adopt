@@ -2,11 +2,7 @@
 .Description {
   font-family: "Akaya Telivigala";
   font-weight: 100;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
   font-size: 24px;
-  text-shadow: 1px 0 0 #000, -1px 0 #000, -1px 0 0 #000;
-  color: #FFA098;
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   -ms-grid-column-span: 3;
@@ -14,11 +10,14 @@
   text-align: center;
   text-justify: auto;
   margin: 20px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  text-shadow: 1px 0 0 #000, -1px 0 #000, -1px 0 0 #000;
+  color: #FFA098;
 }
 
 .ColumnImg {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 3;
+  -ms-grid-row: 4;
   -ms-grid-column: 3;
   grid-area: Columna-Img;
   max-height: 200px;
@@ -27,15 +26,11 @@
   min-width: 100px;
   width: 200px;
   height: 200px;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
 }
 
 .ColumnImg2 {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 5;
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
   grid-area: Columna-Img2;
   width: 200px;
   height: 200px;
@@ -55,6 +50,47 @@
       -ms-flex-pack: start;
           justify-content: flex-start;
   border-style: dotted;
+}
+
+.TextoLabel {
+  text-align: center;
+  font-weight: 50;
+  font-size: 22px;
+  margin-top: 50px;
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: Columna-Img;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  text-shadow: 1px 0 0 #000, -1px 0 #000, -1px 0 0 #000;
+  color: #FFA098;
+}
+
+.Details {
+  text-align: center;
+  font-weight: 50;
+  font-size: 22px;
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: Details;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  text-shadow: 1px 0 0 #000, -1px 0 #000, -1px 0 0 #000;
+  color: #FFA098;
+}
+
+.style-del-texto {
+  font-weight: 50;
+  font-size: 22px;
+  height: 100px;
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
+  grid-area: Columna-Img2;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  text-shadow: 1px 0 0 #000, -1px 0 #000, -1px 0 0 #000;
+  color: #FFA098;
 }
 
 .GridContainer2 {
@@ -129,6 +165,20 @@
       grid-template-areas: "Tittle Tittle Tittle Tittle Tittle" ". Description Description Description ." "Menu-Nav . Columna-Img . Columna-Img2" "Menu-Nav . Columna-Img . Columna-Img2" "Menu-Nav . Columna-Img . Columna-Img2";
 }
 
+.GridContainer3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: 1.6fr 1.0fr 0.3fr 1.1fr 1fr 1fr;
+      grid-template-rows: 1.6fr 1.0fr 0.3fr 1.1fr 1fr 1fr;
+  gap: 10px 10px;
+  max-width: 100%;
+  max-height: 1400px;
+  height: 1200px;
+      grid-template-areas: "Tittle Tittle Tittle Tittle Tittle" ". Description Description Description ." ". Details Details . ." "Menu-Nav . Columna-Img Columna-Img2 ." "Menu-Nav . . . ." "Menu-Nav . . . .";
+}
+
 Header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -174,7 +224,7 @@ Header {
 
 .MenuNav {
   position: fixed;
-  -ms-grid-row: 3;
+  -ms-grid-row: 4;
   -ms-grid-row-span: 3;
   -ms-grid-column: 1;
   grid-area: Menu-Nav;

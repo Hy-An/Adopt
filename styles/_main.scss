@@ -13,6 +13,23 @@
       "Menu-Nav . Columna-Img . Columna-Img2"
       "Menu-Nav . Columna-Img . Columna-Img2";
   }
+
+.GridContainer3 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1.6fr 1.0fr 0.3fr 1.1fr 1fr 1fr;
+    gap: 10px 10px;
+    max-width: 100%;
+    max-height: 1400px;
+    height: 1200px;
+    grid-template-areas:
+      "Tittle Tittle Tittle Tittle Tittle"
+      ". Description Description Description ."
+      ". Details Details . ."
+      "Menu-Nav . Columna-Img Columna-Img2 ."
+      "Menu-Nav . . . ."
+      "Menu-Nav . . . .";
+  } 
   
   Header {
     grid-area: Tittle;

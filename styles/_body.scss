@@ -1,14 +1,12 @@
 .Description {
     font-family: "Akaya Telivigala";
     font-weight: 100;
-    text-decoration-line:underline;
     font-size: 24px;
-    text-shadow: $TextShadow;
-    color: $SecondaryColor;
     grid-area: Description;
     text-align: center;
     text-justify: auto;
     margin: 20px;
+    @include text-shadow;
   }
 
   .ColumnImg {
@@ -19,7 +17,6 @@
     min-width: 100px;
     width: 200px;
     height: 200px;
-    justify-content: flex-start;
   }
   
   .ColumnImg2 {
@@ -40,3 +37,27 @@
     border-style: dotted;
   }
   
+.TextoLabel {
+  text-align:center;
+  font-weight: 50;
+  font-size: 22px;
+  margin-top: 50px;
+  grid-area: Columna-Img;
+  @include text-shadow;
+}
+
+.Details{
+ text-align:center;
+ font-weight: 50;
+ font-size: 22px;
+ grid-area: Details;
+ @include text-shadow;
+}
+
+.style-del-texto{
+  font-weight: 50;
+  font-size: 22px;
+  height: 100px;
+  grid-area: Columna-Img2;
+  @include text-shadow;
+}
